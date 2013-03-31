@@ -4,7 +4,7 @@ require 'rvm/capistrano'
 set :application, '<%= @application %>'
 
 set :scm, :git
-set :repository, 'git@github.com:rubyonrails3/capistrano.git'
+set :repository, 'https://github.com/rubyonrails3/unicorn_deployer'
 set :branch, :master
 
 server 'localhost', :web, :app, :db, :primary => true

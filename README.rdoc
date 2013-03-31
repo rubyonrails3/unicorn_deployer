@@ -1,3 +1,17 @@
 = UnicornDeployer
 
-This project rocks and uses MIT-LICENSE.
+Installation:
+
+gem 'unicorn_deployer'
+
+
+rails g deployer application_name remote_user_name
+
+
+There will come a conflict which you should accept with 'y'
+
+
+Gem above will install capistrano and generator creates nginx site configuration and also generates unicorn configuration and also start up script for unicorn app server and capistrano deploy.rb files contains tasks for setting servers up which are called when you calls `cap deploy:setup` 
+
+
+This project uses MIT-LICENSE.
