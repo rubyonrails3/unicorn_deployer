@@ -1,5 +1,5 @@
 module UnicornDeployer
   class Engine < ::Rails::Engine
-    isolate_namespace UnicornDeployer
+    #isolate_namespace UnicornDeployer
   end
 end
