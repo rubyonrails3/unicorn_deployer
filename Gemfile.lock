@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    unicorn_deployer (0.0.1.8)
+    unicorn_deployer (0.0.1.9)
       capistrano
       rails (>= 3.0.0)
       rvm-capistrano
