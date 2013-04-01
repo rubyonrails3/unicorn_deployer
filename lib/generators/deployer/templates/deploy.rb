@@ -33,5 +33,7 @@ namespace :deploy do
     run "#{sudo} ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
   end
 
+  after "cap:setup", "cap:setup_config"
+
 
 end
