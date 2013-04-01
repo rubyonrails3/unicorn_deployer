@@ -1,10 +1,11 @@
 PATH
   remote: .
   specs:
-    unicorn_deployer (0.0.1.1)
+    unicorn_deployer (0.0.1.2)
       capistrano
-      rails (>= 3.0.0)
+      rails (>= 3.1.0)
       rvm-capistrano
+      unicorn
 
 GEM
   remote: http://rubygems.org/
@@ -47,6 +48,7 @@ GEM
     hike (1.2.1)
     i18n (0.6.4)
     json (1.7.7)
+    kgio (2.8.0)
     mail (2.5.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -79,6 +81,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.17.0, < 2.0)
+    raindrops (0.10.0)
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
@@ -102,6 +105,10 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
+    unicorn (4.6.2)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
