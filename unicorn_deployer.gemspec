@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Adds necessary configuration files and capistrano tasks"
   s.description = "This is app which provides a generator to create unicorn and nginx config files and some task of capistrano"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{config,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 3.1.0"
