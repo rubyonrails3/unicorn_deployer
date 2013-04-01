@@ -18,6 +18,7 @@ class DeployerGenerator < Rails::Generators::NamedBase
     @application = file_name
     @user = user
     template "unicorn_init.sh.erb", "config/unicorn_init.sh"
+    chmod "config/unicorn_init.sh", 0700
   end
 
   def generate_capistrano
